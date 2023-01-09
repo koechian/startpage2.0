@@ -1,3 +1,5 @@
+const city = config["city"];
+
 function dateTime() {
   const date = new Date();
   let today = date.toDateString();
@@ -8,12 +10,11 @@ function dateTime() {
 }
 
 function weatherBalloon(cityID) {
-  var apiKey = "b0b6acc2f3d136f6723cd2b21f0bce27"; //OpenWeather API key
   fetch(
     "https://api.openweathermap.org/data/2.5/weather?id=" +
-      cityID +
+      config["city"] +
       "&appid=" +
-      apiKey
+      config["key"]
   )
     .then(function (resp) {
       return resp.json();
@@ -40,7 +41,7 @@ function weatherBalloon(cityID) {
     });
 }
 
-function loadWeather() {
+function loadWeather(city) {
   dateTime();
-  weatherBalloon(184745); //OpenWeather city ID
+  weatherBalloon(city); //OpenWeather city ID
 }
