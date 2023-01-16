@@ -1,4 +1,5 @@
-const city = config["city"];
+const city = 184745;
+const key = "b0b6acc2f3d136f6723cd2b21f0bce27";
 
 function dateTime() {
   const date = new Date();
@@ -12,9 +13,9 @@ function dateTime() {
 function weatherBalloon(cityID) {
   fetch(
     "https://api.openweathermap.org/data/2.5/weather?id=" +
-      config["city"] +
+      city +
       "&appid=" +
-      config["key"]
+      key
   )
     .then(function (resp) {
       return resp.json();
