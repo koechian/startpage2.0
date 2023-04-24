@@ -1,5 +1,5 @@
 body {
-  background-color: var(--color-black-hsl);
+  background-color: var(--color-black);
   color: var(--primary-font-color);
   font-family: var(--font-monospace);
   font-size: var(--font-size-body);
