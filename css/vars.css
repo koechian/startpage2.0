@@ -7,8 +7,8 @@
     https://css-tricks.com/color-alpha-anywhere/
     */
   --color-black-hsl: 0 0% 11%; /* #1C1C1C */
-  --color-deep-black: 359°, 100%, 0%; 
-   --color-deep-black: hsl(var(--color-deep-black));
+  --color-deep-black-hsl: 359, 100%, 0%;
+  --color-deep-black: hsl(var(--color-deep-black-hsl));
   --color-black: hsl(var(--color-black-hsl));
   --color-blue-hsl: 221, 24%, 13%; /* #191e29 */
   --color-blue: hsl(221, 24%, 13%);
